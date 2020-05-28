@@ -3,6 +3,7 @@ package ru.itis.javalabmessagequeue.models;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Data
@@ -24,4 +25,7 @@ public class Task {
     private Queue queueName;
 
     private String messageId;
+
+    private Date createdTime;
+
 }

@@ -26,6 +26,7 @@ public class Queue {
     @OneToMany(mappedBy = "queueName", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Task> tasks;
 
-    private Date createdTime;
-
+    public Queue(String name) {
+        this.name = name;
+    }
 }
